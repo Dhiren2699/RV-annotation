@@ -119,7 +119,7 @@ def run_RV(load_file_path=None, save_file_path=None, serverside_cache=None,
 
     webbrowser.open(f'http://localhost:{port}')
 
-    app.run_server(debug=True, dev_tools_ui=False, jupyter_mode='tab', port=port)
+    app.run_server(debug=True, dev_tools_ui=False, jupyter_mode='tab', port=port, host='0.0.0.0')
 
 
 if __name__ == '__main__':
